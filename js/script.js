@@ -20,6 +20,6 @@ function myButtonClicked() {
     document.getElementById("answers").innerHTML = "This is not a triangle. "
   }
   else {
-    document.getElementById("answers").innerHTML = "Your triangle is a scalene triangle."
+    document.getElementById("answers").innerHTML = "The triangle is a scalene triangle."
   }
 }

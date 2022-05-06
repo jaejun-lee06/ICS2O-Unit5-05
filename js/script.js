@@ -5,14 +5,21 @@
 "use strict";
 
 function myButtonClicked() {
-  const age = document.getElementById("age").value
-  const day = document.getElementById("days").value 
+  const side1 = document.getElementById("side1").value
+  const side2 = document.getElementById("side2").value 
+  const side3 = document.getElementById("side3").value
 
   
-  if ((day == "tuesday") || (day == "thursday") || (age > 12 && age < 21)) {
-    document.getElementById("answers").innerHTML = "You're eligible for student pricing!"
+  if ((side1 == side2 && side2 == side3)) {
+    document.getElementById("answers").innerHTML = "The triangle is an equilateral triangle. "
+  }
+  else if ((side1 == side2 || side2 == side3 || side1 == side3)) {
+    document.getElementById("answers").innerHTML = "The triangle is an isosceles triangle. "
+  }
+  else if ((side1 == 0 || side2 == 0 || side1 == 0)) {
+    document.getElementById("answers").innerHTML = "This is not a triangle. "
   }
   else {
-    document.getElementById("answers").innerHTML = "You must pay regular price."
+    document.getElementById("answers").innerHTML = "Your triangle is a scalene triangle."
   }
 }

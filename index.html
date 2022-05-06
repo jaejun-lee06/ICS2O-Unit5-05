@@ -25,24 +25,34 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <label for="days">Choose a day of the week:</label>
-        <select name="days" id="days">
-          <option value="sunday">Sunday</option>
-          <option value="monday">Monday</option>
-          <option value="tuesday">Tuesday</option>
-          <option value="wednesday">Wednesday</option>
-          <option value="thursday">Thursday</option>
-          <option value="friday">Friday</option>
-          <option value="saturday">Saturday</option>
-        </select>
+        <h5>Enter the angles of the triangle:</h5>
         <br>
-        <br>
-        <h7>Enter your age:</h7>
+        <h10>Side 1:</h10>
         <!-- Numeric Textfield -->
         <form action="#">
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="age">
-            <label class="mdl-textfield__label" for="age">Put your age here</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="side1">
+            <label class="mdl-textfield__label" for="side1">Put the angle here</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <br>
+        <h10>Side 2:</h10>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="side2">
+            <label class="mdl-textfield__label" for="side2">Put the angle here</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <br>
+        <h10>Side 3:</h10>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="side3">
+            <label class="mdl-textfield__label" for="side3">Put the angle here</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
@@ -52,7 +62,7 @@
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="myButtonClicked()"
         >
-          Pricing
+          Calculate
         </button>
         <div id="answers"></div>
       </main>

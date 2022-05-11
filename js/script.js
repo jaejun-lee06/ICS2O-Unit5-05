@@ -16,8 +16,8 @@ function myButtonClicked() {
   else if ((side1 == side2 || side2 == side3 || side1 == side3)) {
     document.getElementById("answers").innerHTML = "The triangle is an isosceles triangle. "
   }
-  else if ((side1 == 0 || side2 == 0 || side1 == 0)) {
-    document.getElementById("answers").innerHTML = "This is not a triangle. "
+  else if ((side1 <= 0 || side2 <= 0 || side1 <= 0)) {
+    document.getElementById("answers").innerHTML = "This is not a triangle. Please put a positive number. "
   }
   else {
     document.getElementById("answers").innerHTML = "The triangle is a scalene triangle."
